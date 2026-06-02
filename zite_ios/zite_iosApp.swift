@@ -8,36 +8,97 @@
 import SwiftUI
 import Flutter
 import FlutterPluginRegistrant
+import CoreLocation
+import Combine
 
 @main
 struct zite_iosApp: App {
-    
-    // This creates the Flutter engine entry point
-        let flutterEngine = FlutterEngine(name: "my_flutter_engine")
+    @StateObject private var flutterHost = FlutterHostController()
 
-        init() {
-            // Ensure the engine is running
-                flutterEngine.run(withEntrypoint: nil)
-                
-                // Explicitly register plugins (this is vital for things like WebView/Camera)
-                GeneratedPluginRegistrant.register(with: flutterEngine)
-        }
-    
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            FlutterViewHost(engine: flutterEngine).ignoresSafeArea()
+            Group {
+                if flutterHost.isReady {
+                    FlutterViewHost(engine: flutterHost.flutterEngine)
+                        .ignoresSafeArea()
+                } else {
+                    ProgressView()
+                        .task {
+                            flutterHost.start()
+                        }
+                }
+            }
         }
     }
 }
 
-// This is the code that fixes the "Cannot find FlutterViewHost" error.
-// It bridges the Flutter UI to your native SwiftUI layout.
+@MainActor
+final class FlutterHostController: ObservableObject {
+    let flutterEngine = FlutterEngine(name: "my_flutter_engine")
+
+    @Published private(set) var isReady = false
+    private var hasStarted = false
+
+    func start() {
+        guard !hasStarted else { return }
+        hasStarted = true
+
+        LocationAuthorizationPreflight.shared.prepare { [weak self] in
+            guard let self else { return }
+
+            self.flutterEngine.run(withEntrypoint: nil)
+            GeneratedPluginRegistrant.register(with: self.flutterEngine)
+            self.isReady = true
+        }
+    }
+}
+
+final class LocationAuthorizationPreflight: NSObject, CLLocationManagerDelegate {
+    static let shared = LocationAuthorizationPreflight()
+
+    private let locationManager = CLLocationManager()
+    private var completion: (() -> Void)?
+    private var didComplete = false
+
+    private override init() {
+        super.init()
+        locationManager.delegate = self
+    }
+
+    func prepare(completion: @escaping () -> Void) {
+        self.completion = completion
+
+        switch locationManager.authorizationStatus {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .authorizedAlways, .authorizedWhenInUse, .denied, .restricted:
+            finish()
+        @unknown default:
+            finish()
+        }
+    }
+
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        guard manager.authorizationStatus != .notDetermined else { return }
+        finish()
+    }
+
+    private func finish() {
+        guard !didComplete else { return }
+        didComplete = true
+
+        DispatchQueue.main.async { [completion] in
+            completion?()
+        }
+        completion = nil
+    }
+}
+
 struct FlutterViewHost: UIViewControllerRepresentable {
     let engine: FlutterEngine
 
     func makeUIViewController(context: Context) -> FlutterViewController {
-        return FlutterViewController(engine: engine, nibName: nil, bundle: nil)
+        FlutterViewController(engine: engine, nibName: nil, bundle: nil)
     }
 
     func updateUIViewController(_ uiViewController: FlutterViewController, context: Context) {}
