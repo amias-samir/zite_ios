@@ -22,6 +22,7 @@
 		30AF2C6632795EBDF12E7B5D /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809606942FCDA62C001E378A /* package_info_plus.xcframework */; };
 		335A885F35550887EF735A2F /* audioplayers_darwin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067E2FCDA62C001E378A /* audioplayers_darwin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36126D842B0928DFCD8AD41C /* AppCheckCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067D2FCDA62C001E378A /* AppCheckCore.xcframework */; };
+		3964458F9559F18424FFA8CD /* MapboxCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488233258949FDFD740F1181 /* MapboxCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C2E6FDCDD4238A133BAE78B /* path_provider_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606952FCDA62C001E378A /* path_provider_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40D2CC2AC073117BEDEA5504 /* restart_app.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809606972FCDA62C001E378A /* restart_app.xcframework */; };
 		44F859736C79D4B9C83ED3EF /* url_launcher_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069D2FCDA62C001E378A /* url_launcher_ios.xcframework */; };
@@ -29,6 +30,7 @@
 		4D652F1061E3815844F68100 /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069F2FCDA62C001E378A /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54C7B62716BB4F09604FF5C8 /* fluttertoast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096068A2FCDA62C001E378A /* fluttertoast.xcframework */; };
 		599B44296EE4C03CE25712EF /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809606802FCDA62C001E378A /* device_info_plus.xcframework */; };
+		59CBC9B94A767FE82A25795D /* MapboxCoreMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3ACC5248C916F99BD258E4 /* MapboxCoreMaps.xcframework */; };
 		5E03ECCDEB0A864FF6DA5B1F /* device_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606802FCDA62C001E378A /* device_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66AD0ED44C2229444914024B /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069F2FCDA62C001E378A /* webview_flutter_wkwebview.xcframework */; };
 		69AB8ACF1B89B2F037C66C2C /* MapboxMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809606932FCDA62C001E378A /* MapboxMaps.xcframework */; };
@@ -41,7 +43,9 @@
 		750B26DA126B246947C291AD /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067C2FCDA62C001E378A /* AppAuth.xcframework */; };
 		7A1C877A58949EDB41B9C083 /* FlutterPluginRegistrant.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606892FCDA62C001E378A /* FlutterPluginRegistrant.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D6838FC7F59B2E6E2ABF9B7 /* flutter_background_service_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606862FCDA62C001E378A /* flutter_background_service_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D8E44DF803CBF8A46C51C61 /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488233258949FDFD740F1181 /* MapboxCommon.xcframework */; };
 		7E020F7B7BDB1C0CB092677A /* url_launcher_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069D2FCDA62C001E378A /* url_launcher_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E9EFDEEB01D41344A4A1B77 /* Turf.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9091E52992FD73CC874F47D /* Turf.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		809606F22FCDA689001E378A /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067A2FCDA62C001E378A /* App.xcframework */; };
 		809606F32FCDA689001E378A /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067A2FCDA62C001E378A /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		809606F52FCDA893001E378A /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809606852FCDA62C001E378A /* Flutter.xcframework */; };
@@ -64,12 +68,14 @@
 		B36868819979BC608DB9FC86 /* audioplayers_darwin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067E2FCDA62C001E378A /* audioplayers_darwin.xcframework */; };
 		B3A792C3F0C128970D12D383 /* image_picker_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606902FCDA62C001E378A /* image_picker_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B63CAE1FDB8C7411088CAA07 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096068F2FCDA62C001E378A /* GTMSessionFetcher.xcframework */; };
+		B7EAEF25549D93413E53C6A8 /* MapboxCoreMaps.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3ACC5248C916F99BD258E4 /* MapboxCoreMaps.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA58E20014FCC5E961A14FA3 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096068E2FCDA62C001E378A /* GTMAppAuth.xcframework */; };
 		C9D55468D7FB524A3F0D7CE5 /* DKPhotoGallery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606822FCDA62C001E378A /* DKPhotoGallery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D106B329986497840D5EE40C /* SDWebImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606992FCDA62C001E378A /* SDWebImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6B4E48766E7DF81736F4C82 /* AppCheckCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096067D2FCDA62C001E378A /* AppCheckCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7233C6B2BA717B7A84AC2D4 /* video_player_avfoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069E2FCDA62C001E378A /* video_player_avfoundation.xcframework */; };
 		D81E360906E9145C8FA45848 /* SwiftyGif.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8096069C2FCDA62C001E378A /* SwiftyGif.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D95B6DF0B91195A71D439BDC /* Turf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9091E52992FD73CC874F47D /* Turf.xcframework */; };
 		DD301A609D0B98F34D670220 /* MapboxMaps.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606932FCDA62C001E378A /* MapboxMaps.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE6D37A2939EE7D5EBA3FE2D /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606942FCDA62C001E378A /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0ECE3617FE7A38C822F69D8 /* permission_handler_apple.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 809606962FCDA62C001E378A /* permission_handler_apple.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -147,6 +153,9 @@
 				7E020F7B7BDB1C0CB092677A /* url_launcher_ios.xcframework in Embed Frameworks */,
 				2021D7C63439FED0D14D262F /* video_player_avfoundation.xcframework in Embed Frameworks */,
 				4D652F1061E3815844F68100 /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
+				3964458F9559F18424FFA8CD /* MapboxCommon.xcframework in Embed Frameworks */,
+				B7EAEF25549D93413E53C6A8 /* MapboxCoreMaps.xcframework in Embed Frameworks */,
+				7E9EFDEEB01D41344A4A1B77 /* Turf.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +163,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		488233258949FDFD740F1181 /* MapboxCommon.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:GJZR2MEM28:Mapbox, Inc."; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = MapboxCommon/MapboxCommon.xcframework; sourceTree = "<group>"; };
 		8096064F2FCDA45F001E378A /* zite_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zite_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8096065C2FCDA460001E378A /* zite_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zite_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		809606662FCDA460001E378A /* zite_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zite_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +178,7 @@
 		809606822FCDA62C001E378A /* DKPhotoGallery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DKPhotoGallery.xcframework; sourceTree = "<group>"; };
 		809606832FCDA62C001E378A /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBLPromises.xcframework; sourceTree = "<group>"; };
 		809606842FCDA62C001E378A /* file_picker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = file_picker.xcframework; sourceTree = "<group>"; };
-		809606852FCDA62C001E378A /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		809606852FCDA62C001E378A /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
 		809606862FCDA62C001E378A /* flutter_background_service_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_background_service_ios.xcframework; sourceTree = "<group>"; };
 		809606872FCDA62C001E378A /* flutter_foreground_task.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_foreground_task.xcframework; sourceTree = "<group>"; };
 		809606882FCDA62C001E378A /* flutter_local_notifications.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_local_notifications.xcframework; sourceTree = "<group>"; };
@@ -273,27 +283,23 @@
 		809606ED2FCDA62C001E378A /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
 		809606EF2FCDA62C001E378A /* flutter_lldb_helper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = flutter_lldb_helper.py; sourceTree = "<group>"; };
 		809606F02FCDA62C001E378A /* flutter_lldbinit */ = {isa = PBXFileReference; lastKnownFileType = text; path = flutter_lldbinit; sourceTree = "<group>"; };
+		AB3ACC5248C916F99BD258E4 /* MapboxCoreMaps.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:GJZR2MEM28:Mapbox, Inc."; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MapboxCoreMaps.xcframework; path = MapboxCoreMaps/MapboxCoreMaps.xcframework; sourceTree = "<group>"; };
+		E9091E52992FD73CC874F47D /* Turf.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:GJZR2MEM28:Mapbox, Inc."; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = Turf.xcframework; path = Turf/Turf.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		809606512FCDA45F001E378A /* zite_ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = zite_ios;
 			sourceTree = "<group>";
 		};
 		8096065F2FCDA460001E378A /* zite_iosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = zite_iosTests;
 			sourceTree = "<group>";
 		};
 		809606692FCDA460001E378A /* zite_iosUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = zite_iosUITests;
 			sourceTree = "<group>";
 		};
@@ -342,6 +348,9 @@
 				44F859736C79D4B9C83ED3EF /* url_launcher_ios.xcframework in Frameworks */,
 				D7233C6B2BA717B7A84AC2D4 /* video_player_avfoundation.xcframework in Frameworks */,
 				66AD0ED44C2229444914024B /* webview_flutter_wkwebview.xcframework in Frameworks */,
+				7D8E44DF803CBF8A46C51C61 /* MapboxCommon.xcframework in Frameworks */,
+				59CBC9B94A767FE82A25795D /* MapboxCoreMaps.xcframework in Frameworks */,
+				D95B6DF0B91195A71D439BDC /* Turf.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +371,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3780C1A2D7310361880DB188 /* Mapbox Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				488233258949FDFD740F1181 /* MapboxCommon.xcframework */,
+				AB3ACC5248C916F99BD258E4 /* MapboxCoreMaps.xcframework */,
+				E9091E52992FD73CC874F47D /* Turf.xcframework */,
+			);
+			name = "Mapbox Dependencies";
+			path = "../../NAXA/Zite Archive/zite-module-new/.ios/Pods";
+			sourceTree = "<group>";
+		};
 		809606462FCDA45F001E378A = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +390,7 @@
 				809606692FCDA460001E378A /* zite_iosUITests */,
 				809606792FCDA62C001E378A /* Frameworks */,
 				809606502FCDA45F001E378A /* Products */,
+				3780C1A2D7310361880DB188 /* Mapbox Dependencies */,
 			);
 			sourceTree = "<group>";
 		};
@@ -840,6 +861,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos and videos for site, task, and form records.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to map sites, track field work, and attach coordinates to submissions.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location access to track field work when required by the project.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to map sites and attach coordinates to submissions.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record audio for task and form attachments.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save captured media to your photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select images and videos for task and form attachments.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -871,6 +899,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos and videos for site, task, and form records.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to map sites, track field work, and attach coordinates to submissions.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location access to track field work when required by the project.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to map sites and attach coordinates to submissions.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record audio for task and form attachments.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save captured media to your photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select images and videos for task and form attachments.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
