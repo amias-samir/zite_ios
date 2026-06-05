@@ -860,7 +860,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos and videos for site, task, and form records.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to map sites, track field work, and attach coordinates to submissions.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location access to track field work when required by the project.";
@@ -868,6 +867,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record audio for task and form attachments.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save captured media to your photo library.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select images and videos for task and form attachments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -898,7 +898,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to capture photos and videos for site, task, and form records.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to map sites, track field work, and attach coordinates to submissions.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location access to track field work when required by the project.";
@@ -906,6 +905,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record audio for task and form attachments.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save captured media to your photo library.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select images and videos for task and form attachments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
